@@ -1,28 +1,21 @@
 {
   "name": "jobot-cah",
   "description": "Card against Humanity from Hubot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Samuel Boucher <boucher.samuel.c@gmail.com>",
   "license": "MIT",
-
   "keywords": "hubot-scripts, cahfix, jobot, jobot-scripts",
-
   "repository": {
     "type": "git",
     "url": "git://github.com/scboucher/jobot-cah.git"
   },
-
   "bugs": {
     "url": "https://github.com/scboucher/jobot-cah/issues"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "peerDependencies": {
     "hubot": "2.x"
   },
-
   "devDependencies": {
     "chai": "^3.2.0",
     "coffee-script": "1.9.3",
@@ -37,9 +30,7 @@
     "sinon": "^1.13.0",
     "sinon-chai": "^2.7.0"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
