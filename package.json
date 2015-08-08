@@ -2,7 +2,7 @@
   "name": "jobot-cah",
   "description": "Card against Humanity from Hubot",
   "version": "0.1.1",
-  "author": "Samuel Boucher <boucher.samuel.c@gmail.com>",
+  "author": "Samuel Boucher",
   "license": "MIT",
   "keywords": "hubot-scripts, cahfix, jobot, jobot-scripts",
   "repository": {

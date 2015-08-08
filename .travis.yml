@@ -1,11 +1,17 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.10"
-  - "iojs"
+- '0.12'
+- '0.10'
+- iojs
 sudo: false
 cache:
   directories:
-    - node_modules
+  - node_modules
 notifications:
   email: false
+  hipchat:
+    rooms:
+      secure: XekqSx2xJ91gxD70+6Gxph/4PKwNT/39DZUXpxFDykmznL4vj4b8hvjoMu2aAO8ruA62VWryYbHIKBtdfejAiR93QKTRFwzZvfERKtbdbRsyhNa4gdvdOcGwNGp1PhCQ96r0H0jxsrhtAyZHUNsZiGh0Oyq6F5W76pb1MBBRNi7Se/E38gjFxeD+hZ6ZSF4tYzpXNBksf4D3jWPpXCyEOQzNoTjBmFKKxrgrK+pP9Aw+ZC2iliWbjP2kcXaq0+uzt1VkpdAFWuVSWydmdDfDInJ9eKkSe6OygwyUhcQJFdOqrAimqyADdJZ/2pMfEIjgWdD0PqLPlm/8EXPJ1VWjZgmL8FiEdttRKtoX+SGbSFngO8VKn/FmYxEfQiOsZPetxY08IEVf3KuzhWA4X7QE0bhq1xVXNGS96aOBcpEE+ZYEHYvGK4b1vy2h0P6VAl/9MDM99VR6g10ChBRAybeARlixByaXhol+MmEmvpFVdKrpQIbBJ0uLs9MBboIO7+mYA8S1iRw69dwscMVEpYKXgyY57emqBg5HB9VZdS5v5QjWYta/FRExUw0tCvzXeu/O37Iot5HFjdecX7mDS8efQFWznu+rktZbihhxx7Cms+w6RztrasQ1BlMCJmA6KKtTJ/blCzksgtfxARKk2uzOplaeWmjy2Nt3DQL0uZuPQ/g=
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
+    format: html
