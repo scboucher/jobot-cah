@@ -1,7 +1,7 @@
 {
   "name": "jobot-cah",
   "description": "Card against Humanity from Hubot",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Samuel Boucher",
   "license": "MIT",
   "keywords": "hubot-scripts, cahfix, jobot, jobot-scripts",
