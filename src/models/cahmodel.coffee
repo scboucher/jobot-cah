@@ -5,6 +5,9 @@ class CAHModel
   @DECK =
     ANSWERS: []
     QUESTIONS: []
+  @DISCARD =
+    ANSWERS:[]
+    QUESTIONS:[]
   @ANSWERS = [
     "Coat hanger abortions",
     "Man meat",
@@ -546,4 +549,11 @@ class CAHModel
 
   @empty: (type)->
     @DECK[type] = []
+  @draw: (type)->
+    if DECK[type].length > 0
+      value =  @DECK[type].pop()
+      @DISCARD[type].push value
+      return value
+    else
+      return false
 module.exports = CAHModel

@@ -7,6 +7,10 @@
 # Commands:
 #   hubot question card - send a question card
 #   hubot <1-2> answer card - send 1 or 2 question card
+#   hubot draw question card - Draw a question card from the deck, if any left
+#   hubot shuffle answers|questions card - Shuffle card in the deck, i.e. Not those in the discard pile.
+#   hubot reset answers|questions card - Shuffle card in the deck, with all cards
+#   hubot draw <1-2> answers card - Draw <1-2> answer card from the deck, if any left
 #
 # Notes:
 #   None
