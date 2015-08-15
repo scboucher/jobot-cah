@@ -1,7 +1,10 @@
 # ANSWERS and QUESTIONS are based on [Card Against Humanity](http://www.cardsagainsthumanity.com)
 # Cards Against Humanity is distributed under a Creative Commons BY-NC-SA 2.0 license.
-
+_ = require 'lodash'
 class CAHModel
+  @DECK =
+    ANSWER: []
+    QUESTIONS: []
   @ANSWERS = [
     "Coat hanger abortions",
     "Man meat",
@@ -535,5 +538,12 @@ class CAHModel
     "Major League Baseball has banned ____ for giving players an unfair advantage."
   ]
 
+  @reset: (type)->
+    @DECK[type] = _.shuffle @[type]
 
+  @shuffle: (type)->
+    @DECK[type] = _.shuffle @[type]
+
+  @empty: (type)->
+    @DECK[type] = []
 module.exports = CAHModel
