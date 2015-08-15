@@ -3,7 +3,7 @@
 _ = require 'lodash'
 class CAHModel
   @DECK =
-    ANSWER: []
+    ANSWERS: []
     QUESTIONS: []
   @ANSWERS = [
     "Coat hanger abortions",

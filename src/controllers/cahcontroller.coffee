@@ -18,8 +18,8 @@ exports.draw_question_card = (res) ->
 
 exports.draw_answer_card = (res)->
   drawAnswerCard = ()->
-    if CAHModel.DECK.ANSWER.length > 0
-      res.reply CAHModel.DECK.ANSWER.pop()
+    if CAHModel.DECK.ANSWERS.length > 0
+      res.reply CAHModel.DECK.ANSWERS.pop()
     throw "Deck is empty"
   numberOfCard = res.match[1]
   if numberOfCard
